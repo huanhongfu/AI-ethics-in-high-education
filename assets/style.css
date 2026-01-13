@@ -1,0 +1,25 @@
+:root{
+  --theme: #005f73;          /* 主色：清爽学术蓝 */
+  --light: #f5f7fa;
+  --danger: #d90429;
+  --radius: 6px;
+  --max: 900px;
+}
+* {box-sizing: border-box;margin: 0;padding: 0;font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;}
+body {background: var(--light);color: #222;line-height: 1.6;}
+header {text-align: center;padding: 40px 20px 20px;background: white;border-bottom: 4px solid var(--theme);}
+h1 {font-size: 2rem;color: var(--theme);}
+.subtitle {margin-top: 8px;color: #555;}
+section {max-width: var(--max);margin: 30px auto;padding: 0 15px;}
+.center {text-align: center;font-size: 0.9rem;color: #666;margin-top: 10px;}
+.card {padding: 15px;border-radius: var(--radius);margin: 10px 0;}
+.toxic {background: #ffeef0;border-left: 5px solid var(--danger);}
+.scene-grid {display: grid;grid-template-columns: repeat(auto-fit,minmax(160px,1fr));gap: 15px;}
+.scene-card {display: block;background: white;text-align: center;padding: 25px 10px;border-radius: var(--radius);box-shadow: 0 2px 4px rgba(0,0,0,.05);text-decoration: none;color: var(--theme);font-weight: 600;transition: .2s;}
+.scene-card:hover {box-shadow: 0 4px 10px rgba(0,0,0,.08);}
+table {width: 100%;border-collapse: collapse;margin-top: 15px;background: white;border-radius: var(--radius);overflow: hidden;box-shadow: 0 2px 4px rgba(0,0,0,.05);}
+th,td {padding: 12px 15px;text-align: left;font-size: 0.95rem;}
+th {background: var(--theme);color: white;}
+tr:nth-child(even) {background: #f8fafc;}
+code {background: #eef;padding: 2px 4px;border-radius: 3px;font-size: .92em;color: #c0392b;}
+footer {text-align: center;padding: 30px 10px;font-size: .85rem;color: #777;}
